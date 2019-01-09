@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Button from './contaner/Button'
+import Buttoncomp from './contaner/Button'
 import EmailData from './contaner/Emaildata'
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <Button/>
+        <Buttoncomp/>
         <EmailData/>
       </div>
     );

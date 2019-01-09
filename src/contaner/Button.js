@@ -3,9 +3,6 @@ import {getData}from '../action/index'
 import { connect } from 'react-redux';
 
  class Button extends Component {
-    // constructor(props){
-    //     super(props);
-    // }  
       render() {
     
     return (

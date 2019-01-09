@@ -18,9 +18,9 @@ import {Modal, ModalHeader, ModalBody , Row , Button, Table } from 'reactstrap'
           modal: !this.state.modal
         });
       }
-
+     
     render() {
-      
+     console.log("Data is Coming",this.props.data) 
       return (
       <div>
          {this.props.data !=null?(
@@ -57,7 +57,7 @@ import {Modal, ModalHeader, ModalBody , Row , Button, Table } from 'reactstrap'
             </td>
             {/* <td key = {index}>{details.Body}</td> */}
             {/* <td key={index} >{details.Status}</td> */}
-            {details.Status=="Succesful" ? (<font color="Green"><td>{details.Status}</td></font>) : (<font color="Red"><td>{details.Status}</td></font>)}
+            {details.Status==="Succesful" ? (<font color="Green"><td>{details.Status}</td></font>) : (<font color="Red"><td>{details.Status}</td></font>)}
              </tr> ]
         })}
        
