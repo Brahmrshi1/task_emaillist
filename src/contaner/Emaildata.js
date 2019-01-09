@@ -20,10 +20,12 @@ import {Modal, ModalHeader, ModalBody , Row , Button, Table } from 'reactstrap'
       }
 
     render() {
-    return (
-        
+      
+      return (
       <div>
+         {this.props.data !=null?(
           <Table>
+      
           <thead>
           <tr>
               <th>ToEmail</th>
@@ -58,16 +60,19 @@ import {Modal, ModalHeader, ModalBody , Row , Button, Table } from 'reactstrap'
             {details.Status=="Succesful" ? (<font color="Green"><td>{details.Status}</td></font>) : (<font color="Red"><td>{details.Status}</td></font>)}
              </tr> ]
         })}
-            {/* {details.Body} */}
+       
             </tbody>
+       
           </Table>
 
-         
+         ):(<div></div>)}
       </div>
-    )
-  }
+   )  
+      
 }
-
+  
+}
+    
 const mapStateToProps = (state) => ({
     data: state.data,
   })
